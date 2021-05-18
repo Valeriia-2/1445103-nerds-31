@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Lerika](https://up.htmlacademy.ru/htmlcss/31/user/1445103).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
