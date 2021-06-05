@@ -1,0 +1,213 @@
+/* Variables */
+
+:root {
+light-grey: #EEEEEE; /*background*/
+basic-white: #888888; /*background*/
+black: #000000; /*fonts*/
+light-black: #283136; /*fonts*/
+light-red: #FB565A;
+red: #E74246;
+dark-red: #D7373B;
+light-green: #00CA74;
+green: #00BC6C;
+dark-green: #00AA62;
+light-orange: #EFC849;
+orange: #EAB534;
+dark-orange: #E5A722;
+white: #FFFFFF;
+grey: #E1E1E1; /*social-media icons*/
+dark-grey: #4D4D4D; /*icons*/
+extra-light-grey: #666666;
+}
+
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--light-black);
+  background-color: var(--basic-white);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--black);
+  background-color: var(--light-grey);
+
+
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-button:hover {
+  color: var(--light-red);
+}
+
+.site-button:active {
+  color: var(--black);
+  opacity: 30%;
+}
+
+.cart-link:hover {
+  color: var(--light-red);
+}
+
+.cart-link:active {
+  color: var(--black);
+  opacity: 30%;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.index-columns {
+  background-color: var(--light-grey);
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--light-red);
+  border-radius: 3px;
+}
+.button-green {
+  background-color: var(--light-green);
+}
+.button-yellow {
+  background-color: var(--light-orange);
+}
+
+
+.button:hover {
+  background-color: var(--red);
+}
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: var(--dark-red);
+}
+
+.button-green:hover {
+  background-color: var(--green);
+}
+
+.button-green:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: var(--dark-green);
+}
+
+.button-yellow:hover {
+  background-color: var(--orange);
+}
+
+.button-yellow:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: var(--dark-orange);
+}
+
+.features-slogan-1 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--black);
+}
+
+.about-slogan {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--black);
+}
+
+.about-text {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.table-caption {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.row-item {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.row-item-2 {
+  line-height: 18px;
+  color: var(--light-black);
+}
+
+.partners-list {
+  list-style: none;
+}
+
+.adress {
+  color: var(--extra-light-grey);
+  line-height: 18px;
+}
+
+.footer-contacts-phone {
+  color: var(--extra-light-grey);
+}
+
+
+.social-button {
+  background-color: var(--grey);
+}
+
+.social-button:hover {
+  background-color: var(--red);
+}
+
+.social-button:active {
+  background-color: var(--dark-red);
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social p {
+  text-align: center;
+}
+
+.contacts-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-slogan {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--black);
+}
+
