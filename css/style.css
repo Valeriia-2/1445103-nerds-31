@@ -1,23 +1,23 @@
 /* Variables */
 
 :root {
-light-grey: #EEEEEE; /*background*/
-basic-white: #888888; /*background*/
-black: #000000; /*fonts*/
-light-black: #283136; /*fonts*/
-light-red: #FB565A;
-red: #E74246;
-dark-red: #D7373B;
-light-green: #00CA74;
-green: #00BC6C;
-dark-green: #00AA62;
-light-orange: #EFC849;
-orange: #EAB534;
-dark-orange: #E5A722;
-white: #FFFFFF;
-grey: #E1E1E1; /*social-media icons*/
-dark-grey: #4D4D4D; /*icons*/
-extra-light-grey: #666666;
+--light-grey: #EEEEEE; /*background*/
+--basic-white: #888888; /*background*/
+--black: #000000; /*fonts*/
+--light-black: #283136; /*fonts*/
+--light-red: #FB565A;
+--red: #E74246;
+--dark-red: #D7373B;
+--light-green: #00CA74;
+--green: #00BC6C;
+--dark-green: #00AA62;
+--light-orange: #EFC849;
+--orange: #EAB534;
+--dark-orange: #E5A722;
+--white: #FFFFFF;
+--grey: #E1E1E1; /*social-media icons*/
+--dark-grey: #4D4D4D; /*icons*/
+--extra-light-grey: #666666;
 }
 
 
@@ -30,7 +30,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: var(--light-black);
-  background-color: var(--basic-white);
+  background-color: var(--white);
   background-position: top center;
   background-repeat: no-repeat;
 }
