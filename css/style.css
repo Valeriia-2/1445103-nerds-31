@@ -25,11 +25,12 @@
 --blurry-black: rgba(0, 0, 0, 0.3);
 --light-white: rgba(0, 0, 0, 0.0001);
 --half-black: rgba(0, 0, 0, 0.6);
+--almost-white: #DBDBDB;
 }
 
 
 body {
-  min-width: 960px;
+  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Open Sans", sans-serif;
@@ -40,22 +41,46 @@ body {
   background-color: var(--white);
   background-position: top center;
   background-repeat: no-repeat;
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
+.page {
+  height: 100%;
+}
 
 .main-navigation {
+  display: grid;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 500;
   color: var(--black);
   background-color: var(--light-grey);
+}
 
+.container {
+  width: 1160;
+  margin: 0 0;
+  padding: 0 0;
+}
 
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 160px 1fr 160px;
+  width: 1160px;
+  margin: 0 0;
+  padding: 0 10px;
 }
 
 .site-navigation {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  justify-self: end;
 }
 
 .site-navigation-current a:not(href) {
@@ -89,8 +114,25 @@ body {
   text-decoration-line: none;
 }
 
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 760px;
+  column-gap: 15px;
+  margin: 70px 10px;
+}
+
+.services {
+  margin-bottom: 70px;
+  margin: 10px;
+}
+
 .services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .service-item h3 {
@@ -120,7 +162,6 @@ body {
 .button-yellow {
   background-color: var(--light-orange);
 }
-
 
 .button:hover {
   background-color: var(--red);
@@ -153,6 +194,21 @@ body {
   font-size: 55px;
   line-height: 55px;
   color: var(--black);
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+
+.about-description {
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+}
+
+.about-statistics {
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
 }
 
 .about-slogan {
@@ -308,8 +364,8 @@ body {
 }
 
 .pagination-item-current {
-  background-color: var(--white);
-  border: 3px solid #DBDBDB;
+  background-color: var(--light-white);
+  border: 3px solid var(--almost-white);
   box-sizing: border-box;
   border-radius: 3px;
 }
