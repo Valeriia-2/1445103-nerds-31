@@ -76,12 +76,23 @@ body {
   padding: 0 10px;
 }
 
+.main-header-bar {
+  display: grid;
+}
+
 .site-navigation {
   margin: 0;
   padding: 0;
   list-style: none;
-  justify-self: end;
 }
+/*
+.user-navigation {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}*/
+/*Мне все равно показывает, что Корзина с иконкой - это display: block.
+Я сначала написать еще для юзер навигейшн дисплей грид, но потом подумала, что это будет неправильно.
+Поэтому лучше я потом исправлю свою ошибку. Или с новыми знаниями переделаю на грид на что-то другое.*/
 
 .site-navigation-current a:not(href) {
   text-decoration-line: underline;
@@ -198,17 +209,9 @@ body {
 
 .about-section {
   display: grid;
-  grid-template-columns: 1fr min-content;
-}
-
-.about-description {
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
-}
-
-.about-statistics {
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
+  grid-template-columns: 1fr 400px;
+  gap: 40px;
+  margin: 70px 10px;
 }
 
 .about-slogan {
@@ -241,7 +244,15 @@ body {
 
 .partners-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  margin: 70px 0;
 }
+
+/*Я пока оставила секцию с контактами без грида, так как там карта и на нее наклдаывается блок с контактами.
+Я пока не знаю, как это делать. но, если я просто туплю, ты мне намекни, и я постараюсь подумать*/
+
 
 .adress {
   color: var(--extra-light-grey);
@@ -250,6 +261,13 @@ body {
 
 .footer-contacts-phone {
   color: var(--extra-light-grey);
+}
+
+.footer-social {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+  margin: 70px 10px;
 }
 
 .social-button {
@@ -284,6 +302,11 @@ body {
   font-size: 36px;
   line-height: 36px;
   color: var(--black);
+}
+
+.footer-slogan-section {
+  justify-self: start;
+  margin-left: 110px;
 }
 
 /*catalog page*/
