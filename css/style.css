@@ -63,7 +63,6 @@ body {
 }
 
 .container {
-  width: 1160;
   margin: 0 0;
   padding: 0 0;
 }
@@ -311,11 +310,27 @@ body {
 
 /*catalog page*/
 
+.page-catalog {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
 .page-title {
+  grid-column: 1/-1;
+  justify-self: center;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   color: var(--black);
+  background-color: var(--light-grey);
+}
+
+.filters {
+  margin-left: 10px;
+  margin-bottom: 70px;
 }
 
 .filter legend {
@@ -348,6 +363,12 @@ body {
 
 .filter-input-radio:disabled + label {
   color: var(--not-active-grey);
+}
+
+.catalog {
+  margin-right: 10px;
+  margin-bottom: 70px;
+  margin-left: 100px;
 }
 
 .catalog-list {

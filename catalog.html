@@ -15,31 +15,34 @@
    <body class="page-body">
     <header class="main-header">
         <nav class="main-navigation">
+          <div class="main-navigation-wrapper">
           <a class="main-header-logo" href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Дизайн-студии Нёрдс">
           </a>
-          <ul class="site-navigation">
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-          <img src="img/icon-cart.svg" width="15" height="15">
-          <a href="#">Корзина</a>
+          <div class="main-header-bar">
+            <ul class="site-navigation">
+              <li><a href="#">Студия</a></li>
+              <li><a href="#">Клиенты</a></li>
+              <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+            <div class="user-navigation">
+              <img src="img/icon-cart.svg" width="15" height="15">
+              <a href="#">Корзина</a>
+            </div>
+          </div>
         </nav>
     </header>
 
     <main class="page-catalog container">
-
         <h1 class="page-title">Магазин готовых шаблонов</h1>
-
         <section class="filters">
-
             <h2>Фильтр товаров</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
                     <legend>Стоимость:</legend>
-                    <img src="https://via.placeholder.com/260x80" alt="Фильтр">
+                    <img src="https://via.placeholder.com/220x80" alt="Фильтр">
                     <!--Я пока сделала вместо бегунка картинку, потому что мы их еще не проходили-->
                     <label>от<input type="text" value=0></label>
                     <label>до<input type="text" value=15000></label>
@@ -88,7 +91,6 @@
                 </fieldset>
                 <button type="submit" class="filter-button button">Показать</button>
             </form>
-
         </section>
 
         <section class="catalog">
@@ -173,7 +175,6 @@
                     <a href="#">следующая</a>
                 </li>
             </ul>
-
         </section>
 
     </main>
@@ -191,7 +192,7 @@
               <a class="footer-contacts-phone" href="tel:88005558628">8 800 555-86-28</a>
             </p>
 
-            <a href="#">Напишите нам</a>
+            <a class="button" href="#">Напишите нам</a>
           </section>
 
           <section class="footer-social">
@@ -212,18 +213,13 @@
                 </a>
               </li>
             </ul>
-
-            <p class="footer-slogan">Давайте дружить, это выгодно!</p>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
+            <div class="footer-slogan-section">
+              <p class="footer-slogan">Давайте дружить, это выгодно!</p>
+              <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
           </section>
 
     </footer>
-
-
-
-
-
-
 
    </body>
 </html>
