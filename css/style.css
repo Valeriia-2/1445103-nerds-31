@@ -335,18 +335,30 @@ body {
 .filters {
   margin-left: 10px;
   margin-bottom: 70px;
+  width: 260px;
+}
+
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  border: none;
 }
 
 .filter legend {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  margin-bottom: 16px;
   color: var(--black);
 }
 
 .filter ul {
   list-style: none;
   line-height: 20px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .filter-input-checkbox + label,
@@ -369,6 +381,22 @@ body {
   color: var(--not-active-grey);
 }
 
+.sorting-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sorting {
+  display: flex;
+  width: 280px;
+  justify-content: space-between;
+}
+
+.sorting-icons {
+  margin-right: 240px;
+}
+
 .catalog {
   margin-right: 10px;
   margin-bottom: 70px;
@@ -376,6 +404,11 @@ body {
 }
 
 .catalog-list {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 35px;
+  gap: 42px;
   list-style: none;
 }
 
@@ -388,7 +421,13 @@ body {
 }
 
 .pagination-list {
+  display: flex;
   list-style: none;
+}
+
+.pagination-item {
+  width: 50px;
+  height: 50px;
 }
 
 .pagination-item a {
@@ -412,10 +451,10 @@ body {
 }
 
 .pagination-item-current {
+  width: 50px;
+  height: 50px;
   background-color: var(--light-white);
   border: 3px solid var(--almost-white);
-  box-sizing: border-box;
-  border-radius: 3px;
 }
 
 .filter-button {
