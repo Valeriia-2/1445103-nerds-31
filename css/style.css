@@ -34,6 +34,7 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
+  display: grid;
   font-family: "Roboto", "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -42,9 +43,7 @@ body {
   background-color: var(--white);
   background-position: top center;
   background-repeat: no-repeat;
-
   min-height: 100%;
-  display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
@@ -53,9 +52,16 @@ body {
   height: 100%;
 }
 
+.main-header {
+  background-color: var(--light-grey);
+}
+
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
   text-transform: uppercase;
   font-weight: 500;
   color: var(--black);
@@ -63,16 +69,18 @@ body {
 }
 
 .container {
-  margin: 0 0;
+  width: 1160px;
+  margin: 0 auto;
   padding: 0 0;
 }
 
-.main-navigation-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 0;
-  padding: 0 10px;
-  align-items: center;
+.promo-container {
+  background-color: var(--light-grey);
+}
+
+.index-columns {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .main-header-bar {
@@ -90,6 +98,7 @@ body {
 }
 
 .user-navigation {
+  margin-right: 30px;
   max-width: 200px;
 }
 
@@ -256,6 +265,11 @@ body {
 /*Я пока оставила секцию с контактами без грида, так как там карта и на нее наклдаывается блок с контактами.
 Я пока не знаю, как это делать. но, если я просто туплю, ты мне намекни, и я постараюсь подумать*/
 
+.main-footer {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 0;
+}
 
 .adress {
   color: var(--extra-light-grey);
@@ -268,7 +282,7 @@ body {
 
 .footer-social {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 210px 1fr;
   gap: 40px;
   margin: 70px 10px;
 }
@@ -312,6 +326,11 @@ body {
   margin-left: 110px;
 }
 
+.map-img {
+  width: 100%;
+  height: 100%;
+}
+
 /*catalog page*/
 
 .page-catalog {
@@ -319,7 +338,7 @@ body {
   grid-template-columns: 260px 1fr;
   gap: 40px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .page-title {
@@ -394,7 +413,7 @@ body {
 }
 
 .sorting-icons {
-  margin-right: 240px;
+  margin-right: 10px;
 }
 
 .catalog {
