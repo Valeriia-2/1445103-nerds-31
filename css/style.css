@@ -48,6 +48,19 @@ body {
   align-content: start;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page {
   height: 100%;
 }
@@ -75,7 +88,11 @@ body {
 }
 
 .promo-container {
+  min-width: 1160px;
   background-color: var(--light-grey);
+  background-image: url("../img/nerds-index-slide1.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .index-columns {
@@ -138,10 +155,10 @@ body {
 }
 
 .features-list {
-  display: grid;
-  grid-template-columns: 1fr 760px;
-  column-gap: 15px;
-  margin: 70px 10px;
+  /*display: grid;
+  grid-template-columns: 1fr 760px;*/
+  column-gap: 5px;
+  margin: 0px 10px 70px;
 }
 
 .services {
@@ -170,6 +187,8 @@ body {
 }
 
 .button {
+  display: inline-block;
+  padding: 17px 40px 15px;
   font: inherit;
   text-align: center;
   color: var(--white);
@@ -282,13 +301,29 @@ body {
 
 .footer-social {
   display: grid;
-  grid-template-columns: 210px 1fr;
+  grid-template-columns: 320px 1fr;
   gap: 40px;
   margin: 70px 10px;
 }
 
+.social-buttons-list {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
   background-color: var(--grey);
+  margin: 9px;
 }
 
 .social-button:hover {
@@ -297,6 +332,10 @@ body {
 
 .social-button:active {
   background-color: var(--dark-red);
+}
+
+.social-button:focus path {
+  fill: var(--active-grey);
 }
 
 .footer-social ul {
@@ -323,7 +362,7 @@ body {
 
 .footer-slogan-section {
   justify-self: start;
-  margin-left: 110px;
+  /*margin-left: 110px;*/
 }
 
 .map-img {
