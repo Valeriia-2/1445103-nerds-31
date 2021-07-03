@@ -178,8 +178,64 @@ body {
   background-size: 760px 431px;
 }
 
+.slide-2 {
+  background-image: url("../img/nerds-index-slide2.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 760px 431px;
+}
+
+.slide-3 {
+  background-image: url("../img/nerds-index-slide3.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 760px 431px;
+}
+
 .slider-list li {
   min-height: 431px;
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-current {
+  display: block;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 431px;
+  left: 675px;
+  display: flex;
+  width: 67px;
+  justify-content: space-between;
+}
+
+.slider-controls button {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls .current {
+  background: radial-gradient(
+    circle closest-side,
+    var(--white) 15%,
+    var(--white) 55%,
+    #C1C1C1 50%);
+  )
+  /*background-color: var(--white);
+  width: 8px;
+  height: 8px;
+  border: 2px solid #C1C1C1;
+  box-sizing: border-box;*/
 }
 
 .services {
@@ -303,6 +359,15 @@ body {
 .adress {
   color: var(--extra-light-grey);
   line-height: 18px;
+}
+
+.contacts-section {
+  position: relative;
+  width: 319px;
+  height: 308px;
+  left: 140px;
+  bottom: 271px;
+  background-color: var(--white);
 }
 
 .footer-contacts-phone {
