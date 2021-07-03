@@ -90,14 +90,7 @@ body {
 .promo-container {
   min-width: 1160px;
   background-color: var(--light-grey);
-  background-image: url("../img/nerds-index-slide1.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
-.index-columns {
-  width: 1160px;
-  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .main-header-bar {
@@ -154,11 +147,39 @@ body {
   text-decoration-line: none;
 }
 
-.features-list {
-  /*display: grid;
-  grid-template-columns: 1fr 760px;*/
-  column-gap: 5px;
-  margin: 0px 10px 70px;
+.features-slider {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.features-slogan-1 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--black);
+  padding: 0;
+  margin: 0;
+}
+
+.features-info {
+  padding-top: 78px;
+}
+
+.slider-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slide-1 {
+  background-image: url("../img/nerds-index-slide1.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 760px 431px;
+}
+
+.slider-list li {
+  min-height: 431px;
 }
 
 .services {
@@ -182,10 +203,6 @@ body {
   color: var(--black);
 }
 
-.index-columns {
-  background-color: var(--light-grey);
-}
-
 .button {
   display: inline-block;
   padding: 17px 40px 15px;
@@ -201,7 +218,7 @@ body {
 .button-green {
   background-color: var(--light-green);
 }
-.button-yellow {
+.button-orange {
   background-color: var(--light-orange);
 }
 
@@ -229,13 +246,6 @@ body {
 .button-orange:active {
   color: var(--active-grey);
   background-color: var(--dark-orange);
-}
-
-.features-slogan-1 {
-  font-weight: 500;
-  font-size: 55px;
-  line-height: 55px;
-  color: var(--black);
 }
 
 .about-section {
