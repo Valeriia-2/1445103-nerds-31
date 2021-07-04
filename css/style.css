@@ -167,10 +167,6 @@ body {
   margin: 0;
 }
 
-.features-info {
-  padding-top: 78px;
-}
-
 .slider-list {
   list-style: none;
   margin: 0;
@@ -201,6 +197,8 @@ body {
 .slider-list li {
   min-height: 431px;
   position: relative;
+  padding-top: 78px;
+  box-sizing: border-box;
 }
 
 .slide {
@@ -216,7 +214,7 @@ body {
   top: 431px;
   left: 675px;
   display: flex;
-  width: 67px;
+  min-width: 87px;
   justify-content: space-between;
 }
 
@@ -365,7 +363,7 @@ body {
 .contacts-section {
   position: absolute;
   width: 279px;
-  height: 259px;
+  min-height: 259px;
   padding-left: 50px;
   padding-top: 49px;
   left: 90px;
