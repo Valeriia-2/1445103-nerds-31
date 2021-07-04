@@ -219,23 +219,14 @@ body {
   width: 18px;
   height: 18px;
   background-color: var(--white);
-  border: 2px solid var(--white);
+  border: none;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .slider-controls .current {
-  background: radial-gradient(
-    circle closest-side,
-    var(--white) 15%,
-    var(--white) 55%,
-    #C1C1C1 50%);
-  )
-  /*background-color: var(--white);
-  width: 8px;
-  height: 8px;
-  border: 2px solid #C1C1C1;
-  box-sizing: border-box;*/
+  box-shadow: inset 0 0 0 5px #ffffff,
+  inset 0 0 0 7px #c1c1c1;
 }
 
 .services {
@@ -361,12 +352,18 @@ body {
   line-height: 18px;
 }
 
-.contacts-section {
+.footer-contacts {
   position: relative;
-  width: 319px;
-  height: 308px;
-  left: 140px;
-  bottom: 271px;
+}
+
+.contacts-section {
+  position: absolute;
+  width: 279px;
+  height: 259px;
+  padding-left: 50px;
+  padding-top: 49px;
+  left: 90px;
+  top: 60px;
   background-color: var(--white);
 }
 
@@ -442,7 +439,6 @@ body {
 
 .map-img {
   width: 100%;
-  height: 100%;
 }
 
 /*catalog page*/
