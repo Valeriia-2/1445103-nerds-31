@@ -17,6 +17,7 @@
 --white: #FFFFFF;
 --grey: #E1E1E1; /*social-media icons*/
 --dark-grey: #4D4D4D; /*icons*/
+--almost-dark-grey: rgba(77, 77, 77, 0.4);
 --extra-light-grey: #666666;
 --active-grey: rgba(255, 255, 255, 0.3);
 --not-active-grey: rgba(40, 49, 54, 0.3);
@@ -473,8 +474,7 @@ body {
   margin-left: 10px;
   margin-bottom: 70px;
   width: 260px;
-  outline: 5px solid rgba(255, 0, 255, 0.7);
-  outline-offset: -5px;
+
 }
 
 .filter fieldset {
@@ -488,7 +488,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 16px;
+  margin-bottom: 26px;
   color: var(--black);
 }
 
@@ -499,6 +499,60 @@ body {
   margin: 0;
   margin-bottom: 20px;
 }
+
+.filter-option {
+  margin-bottom: 19px;
+  padding-left: 40px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 2px solid var(--almost-dark-grey);
+}
+
+.filter-input-checkbox:checked + label::before {
+  background-image: url("../img-catalog/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0px;
+  border: none;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--almost-dark-grey);
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -29px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--almost-dark-grey);
+  border-radius: 50%;
+}
+
 
 .filter-input-checkbox + label,
 .filter-input-checkbox:hover + label,
@@ -568,15 +622,19 @@ body {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .pagination-item {
-  width: 50px;
-  height: 50px;
+  margin-right: 10px;
 }
 
 .pagination-item a {
+  display: block;
+  padding: 17px 20px;
   color: var(--black);
   font-weight: 500;
   font-size: 16px;
@@ -597,8 +655,16 @@ body {
 }
 
 .pagination-item-current {
-  width: 50px;
-  height: 50px;
+  margin-right: 10px;
+}
+
+.pagination-item:last-child a {
+  padding: 17px 77px;
+}
+
+.pagination-item-current a {
+  display: block;
+  padding: 11px 17px;
   background-color: var(--light-white);
   border: 3px solid var(--almost-white);
 }
