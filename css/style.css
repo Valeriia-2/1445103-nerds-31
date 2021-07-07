@@ -711,6 +711,14 @@ body {
   color: var(--black);
 }
 
+.catalog-item-image svg {
+  opacity: 0.12;
+}
+
+.catalog-item-image:hover svg {
+  opacity: 1;
+}
+
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
