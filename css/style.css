@@ -815,6 +815,18 @@ body {
 
 /*Modal*/
 
+.modal {
+  position: relative;
+  width: 960px;
+  height: 590px;
+}
+
+.modal svg {
+  position: absolute;
+  left: 747px;
+  top: 60px;
+}
+
 .contact-form {
   display: grid;
   width: 960px;
@@ -843,6 +855,13 @@ body {
   border: 2px solid var(--blurry-grey);
   box-sizing: border-box;
   border-radius: 3px;
+}
+
+.form-title {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--black);
 }
 
 .form-text {
