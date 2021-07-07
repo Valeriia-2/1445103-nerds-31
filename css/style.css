@@ -28,6 +28,9 @@
 --half-black: rgba(0, 0, 0, 0.6);
 --almost-white: #DBDBDB;
 --blurry-grey: #D7DCDE;
+--last-grey: #D7DCDF;
+--filter-grey: #ababab;
+--shadow-grey: cfcfcf;
 }
 
 
@@ -449,17 +452,16 @@ body {
 
 .page-catalog {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 1fr 260px 750px;
+  grid-template-rows: 125px 1fr;
   gap: 40px;
   padding: 0;
   margin: 0 auto;
 }
 
 .page-title-container {
-  grid-column: 1/-1;
-  justify-self: center;
+  grid-column: 1/4;
   background-color: var(--light-grey);
-  margin: 0 20px;
 }
 
 .page-title {
@@ -467,14 +469,12 @@ body {
   font-size: 55px;
   line-height: 55px;
   color: var(--black);
-  background-color: var(--light-grey);
 }
 
 .filters {
   margin-left: 10px;
   margin-bottom: 70px;
   width: 260px;
-
 }
 
 .filter fieldset {
@@ -484,10 +484,80 @@ body {
   border: none;
 }
 
+.range-filter {
+  width: 260px;
+  margin-top: 39px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  background-color: var(--light-grey);
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 14px;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--last-grey);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--white);
+  background-color: var(--filter-grey);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--shadow-grey);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: var(--light-black);
+  border: none;
+  border-radius: 5px;
+  background: var(--light-grey);
+}
+
 .filter legend {
-  font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
   margin-bottom: 26px;
   color: var(--black);
 }
@@ -597,7 +667,8 @@ body {
 .catalog {
   margin-right: 10px;
   margin-bottom: 70px;
-  margin-left: 100px;
+  margin-left: 80px;
+  width: 750px;
 }
 
 .catalog-list {
