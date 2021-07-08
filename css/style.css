@@ -472,23 +472,20 @@ body {
 
 .page-catalog {
   display: grid;
-  grid-template-columns: 1fr 260px 750px;
+  grid-template-columns: 1fr 260px 750px 1fr;
   grid-template-rows: 125px 1fr;
   gap: 40px;
   padding: 0;
   margin: 0 auto;
 }
 
-.page-title-container {
-  grid-column: 1/4;
-  background-color: var(--light-grey);
-}
-
 .page-title {
+  grid-column: 1/-1;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   color: var(--black);
+  background-color: var(--light-grey);
 }
 
 .filters {
