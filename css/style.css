@@ -78,6 +78,7 @@ body {
   line-height: 30px;
   display: flex;
   margin-left: auto;
+  margin-top: 70px;
   align-items: center;
   justify-content: space-between;
   text-transform: uppercase;
@@ -469,31 +470,37 @@ body {
 }
 
 /*catalog page*/
-
+/*
 .page-catalog {
-  display: grid;
-  grid-template-columns: 1fr 260px 750px 1fr;
-  grid-template-rows: 125px 1fr;
-  gap: 40px;
+
+  gap: 20px;
   padding: 0;
   margin: 0 auto;
   width: 100%;
 }
+*/
 
 .page-title {
-  grid-column: 1/-1;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   color: var(--black);
+  text-align: center;
+  margin: 0;
+  padding: 80px 0 100px;
   background-color: var(--light-grey);
 }
 
+.filter-catalog {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 50px;
+}
+
 .filters {
-  grid-column: 2/3;
   margin-left: 10px;
   margin-bottom: 70px;
-  width: 260px;
+  margin-top: 80px;
 }
 
 .filter fieldset {
@@ -577,8 +584,8 @@ body {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 26px;
   color: var(--black);
+  margin-bottom: 7px;
 }
 
 .filter ul {
@@ -613,6 +620,10 @@ body {
   border: 2px solid var(--almost-dark-grey);
 }
 
+.filter-input-checkbox:hover + label::before {
+  border: 2px solid var(--dark-grey);
+}
+
 .filter-input-checkbox:checked + label::before {
   background-image: url("../img-catalog/checkbox-on.svg");
   background-repeat: no-repeat;
@@ -631,6 +642,10 @@ body {
   border-radius: 50%;
 }
 
+.filter-input-radio:hover + label::before {
+  border: 2px solid var(--dark-grey);
+}
+
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
@@ -641,7 +656,6 @@ body {
   background-color: var(--almost-dark-grey);
   border-radius: 50%;
 }
-
 
 .filter-input-checkbox + label,
 .filter-input-checkbox:hover + label,
@@ -675,8 +689,6 @@ body {
   justify-content: space-between;
   padding: 0;
   margin-left: 180px;
-  outline: 5px solid rgba(255, 0, 255, 0.7);
-  outline-offset: -5px;
 }
 
 .sorting-icons {
@@ -688,6 +700,7 @@ body {
   margin-bottom: 70px;
   margin-left: 80px;
   width: 750px;
+  margin-top: 60px;
 }
 
 .catalog-list {
@@ -698,8 +711,6 @@ body {
   padding: 0;
   gap: 30px;
   list-style: none;
-  outline: 5px solid rgba(255, 0, 255, 0.7);
-  outline-offset: -5px;
 }
 
 .catalog-subtitle {
