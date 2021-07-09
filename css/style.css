@@ -368,8 +368,6 @@ body {
   opacity: 0.1;
 }
 
-/*Я пока оставила секцию с контактами без грида, так как там карта и на нее наклдаывается блок с контактами.
-Я пока не знаю, как это делать. но, если я просто туплю, ты мне намекни, и я постараюсь подумать*/
 
 .main-footer {
   width: 1160px;
@@ -384,6 +382,17 @@ body {
 
 .footer-contacts {
   position: relative;
+}
+
+.map-container {
+  width: 1200px;
+  height: 416px;
+  margin: 0;
+  padding: 0;
+}
+
+.map-container img {
+  object-fit: fill;
 }
 
 .contacts-section {
@@ -471,15 +480,6 @@ body {
 }
 
 /*catalog page*/
-/*
-.page-catalog {
-
-  gap: 20px;
-  padding: 0;
-  margin: 0 auto;
-  width: 100%;
-}
-*/
 
 .page-title {
   font-weight: 500;
@@ -912,20 +912,60 @@ body {
 /*Modal*/
 
 .modal {
-  position: relative;
-  width: 960px;
-  height: 590px;
+  position: fixed;
+  display: none;
+  width: 760px;
+  padding: 27px 100px 84px;
+  top: 50px;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  margin: auto;
+  background-color: var(--white);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 89px;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 236px;
+  width: 19px;
+  height: 3px;
+  background: rgba(251, 86, 90, 0.3);
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+/*
 .modal svg {
   position: absolute;
   left: 747px;
   top: 60px;
 }
+*/
 
 .contact-form {
   display: grid;
-  width: 960px;
+  width: 760px;
   grid-template-columns: 360px 360px;
   gap: 40px;
 }
