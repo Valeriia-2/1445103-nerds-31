@@ -368,11 +368,18 @@ body {
   opacity: 0.1;
 }
 
-
-.main-footer {
+.footer-social {
   width: 1160px;
   margin: 0 auto;
   padding: 0 0;
+
+}
+
+.footer-social-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 50px;
+  margin: 70px 10px;
 }
 
 .adress {
@@ -384,15 +391,8 @@ body {
   position: relative;
 }
 
-.map-container {
-  width: 1200px;
-  height: 416px;
-  margin: 0;
-  padding: 0;
-}
-
-.map-container img {
-  object-fit: fill;
+.footer-contacts img {
+  display: block;
 }
 
 .contacts-section {
@@ -401,20 +401,13 @@ body {
   min-height: 259px;
   padding-left: 50px;
   padding-top: 49px;
-  left: 90px;
+  left: 190px;
   top: 60px;
   background-color: var(--white);
 }
 
 .footer-contacts-phone {
   color: var(--extra-light-grey);
-}
-
-.footer-social {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 40px;
-  margin: 70px 10px;
 }
 
 .social-buttons-list {
