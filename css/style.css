@@ -395,6 +395,10 @@ body {
   display: block;
 }
 
+.footer-contacts iframe {
+  border-width: 0px;
+}
+
 .contacts-section {
   position: absolute;
   width: 279px;
