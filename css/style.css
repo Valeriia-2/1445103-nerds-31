@@ -475,12 +475,12 @@ body {
 
 .contacts-section {
   position: absolute;
-  width: 279px;
+  width: 271px;
   min-height: 259px;
   padding-left: 50px;
   padding-top: 49px;
-  left: 190px;
-  top: 60px;
+  left: 140px;
+  top: 54px;
   background-color: var(--white);
 }
 
@@ -504,7 +504,7 @@ body {
   height: 81px;
   border-radius: 50%;
   background-color: var(--grey);
-  margin: 9px;
+  margin: 3px;
 }
 
 .social-button:hover {
@@ -523,15 +523,14 @@ body {
   list-style: none;
 }
 
-.footer-social p {
-  text-align: center;
-}
-
 .contacts-title {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 23px;
+  color: #000000;
 }
 
 .footer-slogan {
@@ -539,14 +538,26 @@ body {
   font-size: 36px;
   line-height: 36px;
   color: var(--black);
+  margin-top: 46px;
+  margin-left: 0;
 }
 
 .footer-slogan-section {
   justify-self: start;
 }
 
+.footer-slogan-section:last-child {
+  text-align: left;
+  margin-left: 32px;
+}
+
 .footer-slogan-section p {
   line-height: 6px;
+}
+
+.footer-contacts .button {
+  padding: 14px 45px 14px;
+  margin-top: 16px;
 }
 
 .map-img {
