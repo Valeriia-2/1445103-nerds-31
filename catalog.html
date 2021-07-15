@@ -42,7 +42,7 @@
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset class="filter-item">
-                  <legend>Стоимость:</legend>
+                  <legend class="legend1">Стоимость:</legend>
                     <div class="range-filter">
                       <div class="range-controls">
                         <div class="scale">
@@ -53,17 +53,17 @@
                       </div>
                       <div class="price-controls">
                         <label class="min-price">
-                          от <input type="number" name="min-price" value="0">
+                          от <input type="text" name="min-price" value="0">
                         </label>
                         <label class="max-price">
-                          до <input type="number" name="max-price" value="15000">
+                          до <input type="text" name="max-price" value="15 000">
                         </label>
                       </div>
                     </div>
                 </fieldset>
-                <fieldset>
-                    <legend>Сетка:</legend>
-                    <ul>
+                <fieldset class="fieldset1">
+                    <legend class="net">Сетка:</legend>
+                    <ul class="net-list">
                       <li class="filter-option filter-radio">
                         <input class="filter-input-radio filter-input visually-hidden" type="radio" name="net" value="adaptive" id="adaptive-net" checked>
                         <label for="adaptive-net">Адаптивная</label>
@@ -78,8 +78,8 @@
                       </li>
                     </ul>
                 </fieldset>
-                <fieldset>
-                    <legend>Особенности:</legend>
+                <fieldset class="fieldset2">
+                    <legend class="extra">Особенности:</legend>
                     <ul class="filter-checkbox-list">
                       <li class="filter-option filter-checkbox">
                          <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="features" value="slider" id="slider-feature" checked>
