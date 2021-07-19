@@ -1102,11 +1102,11 @@ body {
 
 .pagination-item a {
   display: block;
-  padding: 17px 20px;
-  color: var(--black);
-  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
+  padding: 17px 20px;
+  color: var(--black);
   text-transform: uppercase;
   text-decoration-line: none;
   background-color: var(--light-grey);
@@ -1264,9 +1264,9 @@ body {
 }
 
 .form-title {
-  font-weight: bold;
   font-size: 45px;
   line-height: 53px;
+  font-weight: bold;
   color: var(--black);
 }
 
