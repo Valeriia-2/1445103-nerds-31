@@ -634,7 +634,7 @@ body {
 }
 
 .contacts-title {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -902,7 +902,8 @@ body {
 
 .filter-input-checkbox + label,
 .filter-input-checkbox:hover + label,
-.filter-input-checkbox:focus + label {
+.filter-input-checkbox:focus + label,
+.filter-input-checkbox:active + label {
   color: var(--light-black);
 }
 
@@ -974,7 +975,8 @@ body {
   margin-right: 12px;
 }
 
-.sorting-button:hover {
+.sorting-button:hover,
+.sorting-button:focus {
   background-image: url("../img/icon-triangle-down.svg");
   opacity: 1;
 }
